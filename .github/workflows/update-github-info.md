@@ -17,6 +17,7 @@ network:
     - defaults
     - github.blog
     - github.com
+    - awesome-copilot.github.com
 
 safe-outputs:
   create-pull-request:
@@ -32,7 +33,7 @@ Keep `site/content/github-info.md` current with useful, recent GitHub guidance f
 ## Instructions
 
 1. Read `notes/mona-notes.md` and the current `site/content/github-info.md` before making decisions.
-2. Use the `web-fetch` tool to read both `https://github.blog/latest/` and `https://github.blog/changelog/` on every run. Follow relevant links on those official pages when needed to verify details.
+2. Use the `web-fetch` tool to read all three sources on every run: `https://github.blog/latest/`, `https://github.blog/changelog/`, and `https://awesome-copilot.github.com/workflows/`. Follow relevant links on those pages when needed to verify details.
 3. Select only recent updates that are useful for developers learning GitHub. Keep summaries short and practical, avoid repeating existing content, and do not infer facts that the sources do not support.
 4. Update only `site/content/github-info.md`. Keep its existing Markdown structure and editorial angle unless a small structural change is necessary. Attribute each new or changed item to its GitHub Blog or Changelog source with a direct link.
 5. If there is no meaningful update, make no changes and do not open a pull request.
